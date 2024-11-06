@@ -29,7 +29,7 @@ class UserFactory extends Factory
         return [
             'name' => 'admin',
             'email' => 'admin@gmail.com',
-            'perfil' =>'Administrador',
+            'perfil' =>'aprovador',
             'email_verified_at' => now(),
             'password' => Hash::make('12345678'),
             'two_factor_secret' => null,
@@ -37,6 +37,7 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'profile_photo_path' => null,
             'current_team_id' => null,
+            'grupo_id' => \App\Models\Grupo::factory()->create()->id,
         ];
     }
 

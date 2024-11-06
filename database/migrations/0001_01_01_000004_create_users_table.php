@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('profile_photo_path', 2048)->nullable();
             $table->foreignId('grupo_id')->references('id')->on('grupos')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->timestamps();
+            
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

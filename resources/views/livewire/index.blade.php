@@ -42,14 +42,18 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+						<li><a href="#"><i class="fa fa-phone"></i> 945424871</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> loja@material.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> Maianga</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-					</ul>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a href="/logout" class="nav-link fa fa-user-o text-white" onclick="event.preventDefault(); this.closest('form').submit();">
+                                Sair
+                            </a>
+                        </form>
+                    </ul>
 				</div>
 			</div>
 			<!-- /TOP HEADER -->
@@ -282,7 +286,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -313,7 +317,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -344,7 +348,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 												</div>
 												<div class="product-btns">
@@ -367,7 +371,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -395,7 +399,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -517,7 +521,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -548,7 +552,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -579,7 +583,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 												</div>
 												<div class="product-btns">
@@ -602,7 +606,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -630,7 +634,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -688,7 +692,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -701,7 +705,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -714,7 +718,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -729,7 +733,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -742,7 +746,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -755,7 +759,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -781,7 +785,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -794,7 +798,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -807,7 +811,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -822,7 +826,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -835,7 +839,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -848,7 +852,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -876,7 +880,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -889,7 +893,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -902,7 +906,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -917,7 +921,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -930,7 +934,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -943,7 +947,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">kz 980.00 <del class="product-old-price">kz 990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->

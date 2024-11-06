@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome', 45);
             $table->decimal('saldoPermitido', 10, 2);
-          //  $table->foreignId('aprovador_id')->references('id')->on('aprovadors')->onDelete('CASCADE')->onUpdate('CASCADE');
+           // $table->foreignId('aprovador_id')->constrained('user');
             $table->timestamps();
         });
     }

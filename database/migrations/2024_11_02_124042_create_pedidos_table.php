@@ -17,9 +17,7 @@ return new class extends Migration
             $table->enum('status', ['novo', 'em revisão', 'alterações solicitadas', 'aprovado', 'rejeitado']);
             $table->dateTime('dataCriacao');
             $table->dateTime('dataAtualizacao')->nullable();
-           // $table->unsignedBigInteger('solicitante_id');
             $table->foreignId('solicitante_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('CASCADE');
-           // $table->unsignedBigInteger('grupo_id');
             $table->foreignId('grupo_id')->references('id')->on('grupos')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->timestamps();
         });

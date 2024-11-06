@@ -3,22 +3,26 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Grupo extends Model
 {
-    protected $fillable = [
-        'nome',
-        'saldo_permitido',
-        'aprovador_id'
-    ];
+    use HasFactory;
 
-    public function pedidos(): HasMany
+    protected $fillable = ['nome', 'saldoPermitido', 'aprovador_id'];
+
+    public function usuarios(): HasMany
     {
-        return $this->hasMany(Pedido::class);
+        return $this->hasMany(User::class);
     }
 
     public function aprovador(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'aprovador_id');
+        return $this->belongsTo(Usuario::class, 'aprovador_id');
+    }
+
+    public function pedidos(): HasMany
+    {
+        return $this->hasMany(Pedido::class);
     }
 }

@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Grupo>
  */
@@ -17,7 +18,9 @@ class GrupoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
-        ];
+
+                'nome' => $this->faker->word(),
+                'saldoPermitido' => $this->faker->randomFloat(2, 0, 1000),
+            ];
     }
 }

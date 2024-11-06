@@ -19,6 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //Livewire::component('site.pedido.add-pedido', AddPedido::class);
     }
 }
